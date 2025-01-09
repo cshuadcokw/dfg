@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"wenduji\startup_stm32f103xb.o"
+"wenduji\main.o"
+"wenduji\gpio.o"
+"wenduji\i2c.o"
+"wenduji\stm32f1xx_it.o"
+"wenduji\stm32f1xx_hal_msp.o"
+"wenduji\aht20.o"
+"wenduji\font.o"
+"wenduji\oled.o"
+"wenduji\stm32f1xx_hal_gpio_ex.o"
+"wenduji\stm32f1xx_hal_i2c.o"
+"wenduji\stm32f1xx_hal.o"
+"wenduji\stm32f1xx_hal_rcc.o"
+"wenduji\stm32f1xx_hal_rcc_ex.o"
+"wenduji\stm32f1xx_hal_gpio.o"
+"wenduji\stm32f1xx_hal_dma.o"
+"wenduji\stm32f1xx_hal_cortex.o"
+"wenduji\stm32f1xx_hal_pwr.o"
+"wenduji\stm32f1xx_hal_flash.o"
+"wenduji\stm32f1xx_hal_flash_ex.o"
+"wenduji\stm32f1xx_hal_exti.o"
+"wenduji\system_stm32f1xx.o"
+--strict --scatter "wenduji\wenduji.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "wenduji.map" -o wenduji\wenduji.axf
