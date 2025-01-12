@@ -109,9 +109,11 @@ int main(void)
     OLED_NewFrame();
     sprintf(message,"温度: %.1f",temperature);
     OLED_PrintString(15 ,15,message,&font16x16,OLED_COLOR_NORMAL);
+    OLED_DrawFilledCircle(0,0,10,OLED_COLOR_NORMAL);
 
     sprintf(message,"湿度: %.1f%%",humidity);
     OLED_PrintString(15,35,message,&font16x16,OLED_COLOR_NORMAL);
+      OLED_DrawFilledCircle(1,1,10,OLED_COLOR_NORMAL);
 
     OLED_ShowFrame();
 
